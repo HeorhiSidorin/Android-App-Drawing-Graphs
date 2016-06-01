@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <title>Graf</title>
+    <link href="css/plot.css" rel="stylesheet" />
+    <script src="scripts/d3.min.js" charset="utf-8"></script>
+    <script src="scripts/underscore-min.js" type="text/javascript"></script>
+    <script src="scripts/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/tauCharts.min.css">
+    <link rel="stylesheet" href="css/font-awesome/font-awesome-4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="sweetalert.css" />
+    <script src="sweetalert.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="plotWrapper">
+        <p class="plot"><span>PLOT</span></p>
+        <p class="coordName"><span class="X">X</span><span>Y</span></p>
+    </div>
+    <div class="coordinates">
+        <div class="coord">
+            <input class="x" type="number" pattern="[0-9\.]*" step="0.01"/>
+            <input class="y" type="number" pattern="[0-9\.]*" step="0.01"/>
+            <i class="fa fa-times"></i>
+        </div>
+        <div class="coord">
+            <input class="x" type="number" pattern="[0-9\.]*" step="0.01"/>
+            <input class="y" type="number" pattern="[0-9\.]*" step="0.01"/>
+            <i class="fa fa-times"></i>
+        </div>
+        <div class="coord">
+            <input class="x" type="number" pattern="[0-9\.]*" step="0.01"/>
+            <input class="y" type="number" pattern="[0-9\.]*" step="0.01"/>
+            <i class="fa fa-times"></i>
+        </div>
+        <div class="coord">
+            <input class="x" type="number" pattern="[0-9\.]*" step="0.01"/>
+            <input class="y" type="number" pattern="[0-9\.]*" step="0.01"/>
+            <i class="fa fa-times"></i>
+        </div>
+    </div>
+    <a class="add">Add</a>
+
+    <div class="line" id="line">
+    </div>
+
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+
+    <script src="scripts/plot.js"></script>
+</body>
+</html>

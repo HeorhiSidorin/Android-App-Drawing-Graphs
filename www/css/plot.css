@@ -1,0 +1,133 @@
+﻿html{
+ width:100%;
+ height:100%;  
+ margin:0;
+ padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: rgba(0,139,139,.65);
+    color: white;
+}
+
+.plotWrapper {
+    background: rgba(0,139,139,1);
+
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+    .plot {
+        margin: 0;
+        width: 100vw;
+        background: rgba(255,255,255,.3);
+        padding: 15px 0;
+    }
+
+        .plot span {
+           color: white;
+           font-size: 25px;
+           display: inline-block;
+           border: 2px solid aliceblue;
+           padding: 20px 15vw;
+           -moz-transition: all linear 0.15s;
+           -o-transition: all linear 0.15s;
+           -webkit-transition: all linear 0.15s;
+           transition: all linear 0.15s;
+        }
+
+        .plot span:hover {
+            cursor: pointer;
+            border: 2px solid white;
+            background: rgba(255,255,255,0.7);
+            color: rgba(0,139,139,1);
+            -moz-transition: all linear 0.15s; 
+            -o-transition: all linear 0.15s;
+            -webkit-transition: all linear 0.15s;
+            transition: all linear 0.15s;
+        }
+
+    .coordName span.X {
+        margin-right: 100px;
+    }
+
+.coordinates {
+    position: relative;
+    z-index: 1;
+}
+
+    div.coord] {
+        display: flex;
+        justify-content: center;
+    }
+
+input {
+    width: 100px;
+    font-size: 21px;
+    margin: 5px;
+}
+
+input.x {
+    margin-left: 22px;
+}
+
+a.add {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    display: inline-block;
+    border: 2px solid aliceblue;
+    padding: 5px 0;
+    margin-bottom: 5px;
+    width: 30vw;
+    -moz-transition: all linear 0.15s;
+        -o-transition: all linear 0.15s;
+        -webkit-transition: all linear 0.15s;
+        transition: all linear 0.15s;
+}
+
+    a.add:hover {
+        text-decoration: none;
+        border: 2px solid white;
+        background: rgba(255,255,255,0.7);
+        color: rgba(0,139,139,1);
+        -moz-transition: all linear 0.15s; 
+        -o-transition: all linear 0.15s;
+        -webkit-transition: all linear 0.15s;
+        transition: all linear 0.15s;
+    }
+
+html > /**/ body .color-white {
+    stroke: white;
+}
+
+.line {
+    color: rgb(0,139,139);
+    background: white;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.line > svg{  
+ display:block;
+}
+
+html > /**/ body .line i.fa.fa-backward, html > /**/ body .line i.fa.fa-floppy-o {
+    cursor: pointer;
+    margin: 15px 20px 0;
+}
